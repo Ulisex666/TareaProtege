@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia/"
+     xml:base="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#Pais -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#Pais"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#PaisRiesgo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#PaisRiesgo">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#China"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#CoreaSur"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#HongKong"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#Iran"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#Italia"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#Japon"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#Singapur"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#Pais"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#PaisSeguro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#PaisSeguro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#PaisSeguro">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#Pais"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#PaisRiesgo"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#China -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#China">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#Pais"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#CoreaSur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#CoreaSur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#Pais"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#HongKong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#HongKong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#Pais"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#Iran -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#Iran">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#Pais"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#Italia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#Italia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#Pais"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#Japon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#Japon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#Pais"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#ReinoUnido -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#ReinoUnido">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#Pais"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#Rusia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#Rusia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#Pais"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#Singapur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#Singapur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ulisex/ontologies/2025/5/CovidOntologia#Pais"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
